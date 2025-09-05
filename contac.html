@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cà Phê thư giản  – Liên hệ</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header + menu -->
+  <header>
+    <div class="container topbar">
+      <a class="brand" href="index.html">
+        <img src="https://picsum.photos/seed/bean/120/120" alt="Logo quán" />
+        <span class="title">Cà Phê thư giản</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a class="active" href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Nội dung chính -->
+  <main class="container">
+    <section class="section">
+      <h2>Gửi tin nhắn cho chúng tôi</h2>
+      <!-- Form liên hệ có mailto -->
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <div>
+          <label for="name">Họ tên</label>
+          <input id="name" name="Họ tên" type="text" required placeholder="Nguyễn Văn A" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="Email" type="email" required placeholder="ban@vidu.com" />
+        </div>
+        <div>
+          <label for="message">Nội dung</label>
+          <textarea id="message" name="Nội dung" required placeholder="Lời nhắn của bạn..."></textarea>
+        </div>
+        <button type="submit">Gửi</button>
+      </form>
+
+      <p style="margin-top:12px;">
+        Hoặc bấm vào địa chỉ email để mở hộp thư: 
+        <a href="mailto:your-email@example.com?subject=Khách%20hàng%20liên%20hệ">your-email@example.com</a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Thông tin liên hệ</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Địa chỉ</h3>
+          <p>123 Đường Cà Phê, Quận 1, TP.HCM</p>
+        </div>
+        <div class="card">
+          <h3>Giờ mở cửa</h3>
+          <p>Thứ 2 – CN: 7:00 – 22:00</p>
+        </div>
+        <div class="card">
+          <h3>Hotline</h3>
+          <p><a href="tel:+84901234567">+84 90 123 4567</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container inner">
+      <small>© 2025 Cà Phê thư giản</small>
+      <a class="btn" href="index.html">Về trang chủ</a>
+    </div>
+  </footer>
+</body>
+</html>
