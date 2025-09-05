@@ -6,8 +6,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header + Menu -->
   <header>
-    <h1>☕ Quán cà phê thư giản</h1>
+    <h1>☕ Quán Cà Phê thư giản</h1>
     <nav>
       <ul>
         <li><a href="index.html">Trang chủ</a></li>
@@ -16,48 +17,30 @@
       </ul>
     </nav>
   </header>
+
+  <!-- Nội dung liên hệ -->
   <section>
     <h2>Liên hệ với chúng tôi</h2>
+    <p>Hãy để lại thông tin, chúng tôi sẽ phản hồi sớm nhất.</p>
+
     <form action="mailto:quancaphe@gmail.com" method="post" enctype="text/plain">
-      <label>Họ tên:</label><br>
-      <input type="text" name="name" required><br><br>
+      <label for="name">Họ tên:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
 
-      <label>Email:</label><br>
-      <input type="email" name="email" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
 
-      <label>Nội dung:</label><br>
-      <textarea name="message" rows="5" required></textarea><br><br>
+      <label for="message">Nội dung:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
       <button type="submit">Gửi</button>
+      <button type="reset">Xóa</button>
     </form>
+
+    <h3>Thông tin liên hệ trực tiếp</h3>
+    <p>📍 Địa chỉ: 123 Đường Lê Lợi, Quận 1, TP.HCM</p>
+    <p>📞 SĐT: 0123 456 789</p>
+    <p>📧 Email: <a href="mailto:quancaphe@gmail.com">quancaphe@gmail.com</a></p>
   </section>
 </body>
 </html>
-    <section class="section">
-      <h2>Thông tin liên hệ</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Địa chỉ</h3>
-          <p>123 Đường Cà Phê, Quận 1, TP.HCM</p>
-        </div>
-        <div class="card">
-          <h3>Giờ mở cửa</h3>
-          <p>Thứ 2 – CN: 7:00 – 22:00</p>
-        </div>
-        <div class="card">
-          <h3>Hotline</h3>
-          <p><a href="tel:+84901234567">+84 90 123 4567</a></p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer>
-    <div class="container inner">
-      <small>© 2025 Cà Phê thư giản</small>
-      <a class="btn" href="index.html">Về trang chủ</a>
-    </div>
-  </footer>
-</body>
-</html>
-
